@@ -1,0 +1,372 @@
+body, * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgb(217 225 225);
+    /*font-family: 'Agdasima', sans-serif;*/
+    font-family: 'Lexend Peta', sans-serif;
+    background-color: rgb(47 47 47);
+}
+
+section {
+    width: 97dvw;
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social {
+    padding: 5px 10px;
+    margin-top: 7px;
+    border: 1px solid rgb(61 60 60);
+    margin-left: 13px;
+    cursor: pointer;
+    float: right;
+}
+
+    .social:hover {
+        border: 1px solid rgb(255 124 124);
+        transition: ease-in;
+        transition-duration: .2s;
+    }
+
+i:hover, a:hover {
+    color: rgb(246 192 165) !important;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    flex-wrap: nowrap;
+}
+
+#pic {
+    border-left: 3px solid rgb(246 192 165);
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.detail {
+    width: 700px;
+    text-wrap: inherit;
+    text-align: right;
+    align-self: center;
+}
+
+.tag {
+    color: rgb(246 192 165);
+    text-decoration: underline;
+}
+
+#schclg, a {
+    text-decoration: none;
+}
+
+.bb:first-letter {
+    color: rgb(246 192 165);
+}
+
+.anubhav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.exp {
+    width: 600px;
+}
+
+#year, #month, #day, #projectDone, #dots sub {
+    color: rgb(246 192 165);
+    font-size: x-large;
+}
+
+#dots {
+    animation: bb ease-in-out 2s infinite;
+}
+
+#edu-qua {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.logos {
+    height: 50px;
+    width: 80px;
+}
+
+.skill {
+    height: 100px;
+    width: 130px;
+    animation: logo 5s infinite;
+    margin: 30px;
+}
+
+.resume .resume-title {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.resume p {
+    font-size: 14px;
+    margin-bottom: 0px !important;
+}
+
+
+.footerNav {
+    position: fixed;
+    top: 300px;
+    left: 0px;
+}
+
+    .footerNav ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+    }
+
+
+.Nav {
+    flex-direction: column;
+    list-style: none;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+.footerNav ul, .footerNav ul li:hover {
+    color: rgb(255 124 124);
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+    font-size: 20px;
+}
+
+    .resume .resume-item h4 {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .resume .resume-item h5 {
+        font-size: 16px;
+        display: inline-block;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .resume .resume-item ul {
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+        .resume .resume-item ul li {
+            padding-bottom: 10px;
+            font-size: 14px;
+        }
+
+    .resume .resume-item:last-child {
+        padding-bottom: 0;
+    }
+
+    .resume .resume-item::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        left: -9px;
+        top: 0;
+        background: #fff;
+        border: 2px solid #1f5297;
+    }
+
+
+.project_logo {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    color: wheat;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50vw;
+    margin-top: 20px;
+    padding: 5px;
+    border-bottom: 2px solid gray;
+}
+
+    .project:hover {
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: rgb(68 68 68)
+    }
+
+@keyframes logo {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.centerText {
+    position: relative;
+    z-index: 0;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem;
+    &::before
+
+{
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(black, gray), linear-gradient(white, orange);
+    animation: rotate 3s linear infinite;
+}
+
+&::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: -1px;
+    top: 2px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: white;
+    border-radius: 5px;
+    background-color: inherit;
+}
+
+}
+
+.services {
+    display: flex;
+    margin: 60px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.idol {
+    margin: 30px;
+    border: .3px solid;
+    width: 300px;
+    height: 300px;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+#det {
+    height: 300px;
+}
+
+@keyframes bb {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .social {
+        float: left
+    }
+
+    .detail {
+        width: 100% !important;
+        text-wrap: inherit;
+        text-align: center !important;
+        margin-top: 50px;
+    }
+
+    .hero {
+        flex-wrap: wrap-reverse;
+    }
+
+    .hero-image {
+        height: 100%;
+        margin-top: 30px;
+    }
+
+    #edu-qua {
+        margin-top: 30px;
+    }
+
+    .sch {
+        margin-top: 60px;
+    }
+
+    .jrny {
+        margin-top: 40px;
+    }
+
+    .project {
+        width: 75dvw;
+    }
+
+    #pic {
+        border-left: none;
+        border-bottom: 3px solid rgb(246 192 165);
+    }
+
+    .footerNav {
+        width:100vw;
+        position: fixed;
+        top:auto;
+        bottom: 0px;
+        border-top:1px solid gray;
+    }
+
+.footerNav ul {
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+}
+    .Nav {
+        flex-direction: column;
+        list-style: none;
+        padding: 15px;
+        margin: 15px;
+    }
+}
