@@ -39,7 +39,7 @@ typeNow();
 
 const currantDate = new Date();
 setInterval(() => {
-    document.getElementById('year').innerText = currantDate.getFullYear() - 2022;
+    document.getElementById('year').innerText = currantDate.getFullYear() - 2023;
     document.getElementById('month').innerText = currantDate.getMonth();
     document.getElementById('day').innerText = currantDate.getDate();
 }, 1000);
