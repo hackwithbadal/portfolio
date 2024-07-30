@@ -1,11 +1,19 @@
-body, * {
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Dosis:wght@200&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Nanum+Gothic+Coding:wght@700&family=Orbitron:wght@900&family=VT323&display=swap');
+
+body,
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     color: rgb(217 225 225);
-    /*font-family: 'Agdasima', sans-serif;*/
-    font-family: 'Lexend Peta', sans-serif;
     background-color: rgb(47 47 47);
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    background-color: transparent;
 }
 
 section {
@@ -24,20 +32,21 @@ section {
     float: right;
 }
 
-    .social:hover {
-        border: 1px solid rgb(255 124 124);
-        transition: ease-in;
-        transition-duration: .2s;
-    }
+.social:hover {
+    border: 1px solid rgb(255 124 124);
+    transition: ease-in;
+    transition-duration: .2s;
+}
 
-i:hover, a:hover {
+i:hover,
+a:hover {
     color: rgb(246 192 165) !important;
 }
 
 .hero {
     display: flex;
     justify-content: center;
-    margin-top: 130px;
+    margin-top: 70px;
     flex-wrap: nowrap;
 }
 
@@ -59,7 +68,8 @@ i:hover, a:hover {
     text-decoration: underline;
 }
 
-#schclg, a {
+#schclg,
+a {
     text-decoration: none;
 }
 
@@ -78,7 +88,11 @@ i:hover, a:hover {
     width: 600px;
 }
 
-#year, #month, #day, #projectDone, #dots sub {
+#year,
+#month,
+#day,
+#projectDone,
+#dots sub {
     color: rgb(246 192 165);
     font-size: x-large;
 }
@@ -126,11 +140,11 @@ i:hover, a:hover {
     background-color: transparent;
 }
 
-    .footerNav ul {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
+.footerNav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
 
 
 .Nav {
@@ -140,7 +154,9 @@ i:hover, a:hover {
     padding: 10px;
     margin: 10px;
 }
-.footerNav ul, .footerNav ul li:hover {
+
+.footerNav ul,
+.footerNav ul li:hover {
     color: rgb(255 124 124);
 }
 
@@ -152,47 +168,47 @@ i:hover, a:hover {
     font-size: 20px;
 }
 
-    .resume .resume-item h4 {
-        line-height: 18px;
-        font-size: 18px;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-family: "Poppins", sans-serif;
-        margin-bottom: 10px;
-    }
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+}
 
-    .resume .resume-item h5 {
-        font-size: 16px;
-        display: inline-block;
-        font-weight: 600;
-        margin-bottom: 10px;
-    }
+.resume .resume-item h5 {
+    font-size: 10px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
-    .resume .resume-item ul {
-        padding-left: 20px;
-        font-size: 20px;
-    }
+.resume .resume-item ul {
+    padding-left: 20px;
+    font-size: 20px;
+}
 
-        .resume .resume-item ul li {
-            padding-bottom: 10px;
-            font-size: 14px;
-        }
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+    font-size: 14px;
+}
 
-    .resume .resume-item:last-child {
-        padding-bottom: 0;
-    }
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
 
-    .resume .resume-item::before {
-        content: "";
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        border-radius: 50px;
-        left: -9px;
-        top: 0;
-        background: #fff;
-        border: 2px solid #1f5297;
-    }
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;
+}
 
 
 .project_logo {
@@ -211,11 +227,11 @@ i:hover, a:hover {
     border-bottom: 2px solid gray;
 }
 
-    .project:hover {
-        cursor: pointer;
-        border-radius: 20px;
-        background-color: rgb(68 68 68)
-    }
+.github-redictct-btn img:hover {
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255)
+}
 
 @keyframes logo {
     0% {
@@ -239,36 +255,35 @@ i:hover, a:hover {
     border-radius: 10px;
     overflow: hidden;
     padding: 2rem;
-    &::before
 
-{
-    content: '';
-    position: absolute;
-    z-index: -2;
-    left: -50%;
-    top: -50%;
-    width: 200%;
-    height: 200%;
-    background-color: gray;
-    background-repeat: no-repeat;
-    background-size: 50% 50%, 50% 50%;
-    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: linear-gradient(black, gray), linear-gradient(white, orange);
-    animation: rotate 3s linear infinite;
-}
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -2;
+        left: -50%;
+        top: -50%;
+        width: 200%;
+        height: 200%;
+        background-color: gray;
+        background-repeat: no-repeat;
+        background-size: 50% 50%, 50% 50%;
+        background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+        background-image: linear-gradient(black, gray), linear-gradient(white, orange);
+        animation: rotate 3s linear infinite;
+    }
 
-&::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    left: -1px;
-    top: 2px;
-    width: calc(100% - 12px);
-    height: calc(100% - 12px);
-    background: white;
-    border-radius: 5px;
-    background-color: inherit;
-}
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: -1px;
+        top: 2px;
+        width: calc(100% - 12px);
+        height: calc(100% - 12px);
+        background: white;
+        border-radius: 5px;
+        background-color: inherit;
+    }
 
 }
 
@@ -284,6 +299,139 @@ i:hover, a:hover {
     border: .3px solid;
     width: 300px;
     height: 300px;
+}
+
+.tech-stack {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background: none;
+    border: 1px solid #333;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background: #4a4949;
+    color: white;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 2rem;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: scale(1.2);
+}
+
+.tech-item img {
+    width: 150px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.tech-name {
+    font-size: 1rem;
+}
+
+#toTopButton {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100000;
+}
+
+#toTopButton::after {
+    content: "\f0aa";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#toTopButton:hover {
+    cursor: pointer;
+    background-color: rgb(53, 53, 53);;
+}
+
+#toTopButton:active {
+    background-color: #555;
+}
+
+#toTopButton.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project {
+    position: relative;
+}
+
+.github-redictct-btn {
+    position: absolute;
+    right: 0px;
+}
+.github-redictct-btn img{
+    height: 30px;
+    width: 80px;
+    border-radius: 30px;
+    background-color: rgb(194, 191, 191)
+}
+
+@media (min-width: 500px) {
+    .content {
+        width: 43%;
+    }
+
+    #button {
+        margin: 30px;
+    }
+}
+
+.content h1 {
+    margin-bottom: -10px;
+    color: #03a9f4;
+    line-height: 1.5;
+}
+
+.content h3 {
+    font-style: italic;
+    color: #96a2a7;
+}
+ul{
+    margin-bottom: 0px !important;
 }
 
 @keyframes rotate {
@@ -354,22 +502,30 @@ i:hover, a:hover {
 
     .footerNav {
         display: block;
-        width:100vw;
+        width: 100vw;
         position: fixed;
-        top:auto;
+        top: auto;
         bottom: 0px;
-        border-top:2px solid gray;
+        border-top: 2px solid gray;
     }
 
-.footerNav ul {
-     display: flex;
-     justify-content: space-between;
-     flex-direction: row;
-}
+    .footerNav ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
     .Nav {
         flex-direction: column;
         list-style: none;
         padding: 20px;
         margin: 20px;
+    }
+
+    .look {
+        display: none;
+    }
+    #toTopButton{
+        bottom: 100px;
     }
 }

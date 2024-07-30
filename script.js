@@ -1,4 +1,4 @@
-﻿const words = ["Hello buddy 😍✌...", "Welcome to my website 🌹...", "This is my personal website 😃...","Thank you for visiting ❤...","Contact me...",];
+﻿const words = ["Hello buddy 😍✌...", "Thank you for visiting ❤...", "Welcome to my website 🌹...", "😃...", "Contact me...",];
 let i = 0;
 let counter;
 function typeNow() {
@@ -10,7 +10,7 @@ function typeNow() {
             deleteNow();
             return false;
         };
-        counter = setTimeout(loopTyping, 200);
+        counter = setTimeout(loopTyping, 100);
     };
     loopTyping();
 };
@@ -30,7 +30,7 @@ function deleteNow() {
             typeNow();
             return false;
         };
-        counter = setTimeout(loopDeleting, 200);
+        counter = setTimeout(loopDeleting, 100);
     };
     loopDeleting();
 };
@@ -43,3 +43,40 @@ setInterval(() => {
     document.getElementById('month').innerText = currantDate.getMonth();
     document.getElementById('day').innerText = currantDate.getDate();
 }, 1000);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const techItems = document.querySelectorAll('.tech-item');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filter = btn.getAttribute('data-filter');
+
+            filterBtns.forEach(btn => btn.classList.remove('active'));
+            btn.classList.add('active');
+
+            techItems.forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+
+
+var btn = $('#toTopButton');
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});
+
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+});
